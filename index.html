@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeke Shaq | IT Kompaniya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Jeke Shaq - Zamonaviy IT yechimlar va raqamli mahsulotlar yaratuvchi kompaniya.">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Jeke<span>Shaq</span></a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n="nav.home">Asosiy</a></li>
+                    <li><a href="#about" data-i18n="nav.about">Biz haqimizda</a></li>
+                    <li><a href="#portfolio" data-i18n="nav.portfolio">Loyihalarimiz</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Bog'lanish</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="active" onclick="switchLanguage('uz')" id="lang-uz">UZ</button>
+                    <button onclick="switchLanguage('ru')" id="lang-ru">RU</button>
+                    <button onclick="switchLanguage('en')" id="lang-en">EN</button>
+                </div>
+            </div>
+            <button class="menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title" data-i18n="hero.title">Raqamli kelajakni <br> <span class="gradient-text">biz bilan quring</span></h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">"Jeke Shaq" IT Kompaniyasi - biznesingizni yangi bosqichga olib chiquvchi zamonaviy texnologik mahsulotlar va xizmatlar.</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn btn-primary" data-i18n="btn.portfolio">Loyihalarni ko'rish</a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="btn.contact">Bog'lanish</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="about.title">Kompaniya <span class="gradient-text">Haqida</span></h2>
+                <p data-i18n="about.subtitle">Innovatsion g'oyalarni raqamli voqelikka aylantiramiz</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon">🚀</div>
+                    <h3 data-i18n="about.card1.title">Zamonaviy yondashuv</h3>
+                    <p data-i18n="about.card1.desc">Eng so'nggi texnologiyalardan foydalangan holda barqaror, xavfsiz va tezkor loyihalar yaratamiz.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">🎯</div>
+                    <h3 data-i18n="about.card2.title">Sifat va aniqlik</h3>
+                    <p data-i18n="about.card2.desc">Har bir loyihamizda foydalanuvchilar qulayligi va biznes talablariga alohida e'tibor qaratamiz.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">💡</div>
+                    <h3 data-i18n="about.card3.title">Kreativ dizayn</h3>
+                    <p data-i18n="about.card3.desc">Foydalanishga qulay va vizual jihatdan mukammal bo'lgan premium darajadagi foydalanuvchi interfeyslari (UI/UX).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="portfolio.title">Bizning <span class="gradient-text">Loyihalar</span></h2>
+                <p data-i18n="portfolio.subtitle">Biz yaratgan muvaffaqiyatli xizmatlar va mahsulotlar bilan tanishing</p>
+            </div>
+            <div class="portfolio-grid">
+                <!-- FerMark -->
+                <div class="project-card">
+                    <div class="project-img fermark-img">
+                        <div class="overlay"></div>
+                        <a href="https://fermark.uz" target="_blank" class="view-btn" data-i18n="btn.visit">Saytga o'tish</a>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category" data-i18n="portfolio.fermark.cat">Bozor Platformasi</span>
+                        <h3>FerMark</h3>
+                        <p data-i18n="portfolio.fermark.desc">Fermerlar va xaridorlarni vositachisiz to'g'ridan-to'g'ri bog'lovchi zamonaviy qishloq xo'jaligi bozori, Android va iOS ilovalar.</p>
+                        <div class="tech-stack">
+                            <span>iOS</span>
+                            <span>Android</span>
+                            <span>Web App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- eTaklifnoma -->
+                <div class="project-card">
+                    <div class="project-img etaklifnoma-img">
+                        <div class="overlay"></div>
+                        <a href="https://etaklifnoma.uz" target="_blank" class="view-btn" data-i18n="btn.visit">Saytga o'tish</a>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category" data-i18n="portfolio.etaklifnoma.cat">SaaS Xizmat</span>
+                        <h3>Taklifnoma</h3>
+                        <p data-i18n="portfolio.etaklifnoma.desc">To'y, yubiley va boshqa tadbirlar uchun zamonaviy, interaktiv va ko'p tilli onlayn taklifnomalar yaratuvchi platforma.</p>
+                        <div class="tech-stack">
+                            <span>Web</span>
+                            <span>Interactive</span>
+                            <span>Multilingual</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical CRM -->
+                <div class="project-card">
+                    <div class="project-img crm-img">
+                        <div class="overlay"></div>
+                        <a href="https://crm-clinic-landing.vercel.app/" target="_blank" class="view-btn" data-i18n="btn.visit">Saytga o'tish</a>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category" data-i18n="portfolio.crm.cat">B2B Tizim</span>
+                        <h3>Medical CRM</h3>
+                        <p data-i18n="portfolio.crm.desc">Klinikalar va tibbiyot markazlarini oson boshqarish, monitoring qilish uchun Multi-tenant CRM tizimi va iOS kliyenti.</p>
+                        <div class="tech-stack">
+                            <span>CRM</span>
+                            <span>Management</span>
+                            <span>iOS Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container contact-content">
+            <div class="contact-info">
+                <h2 data-i18n="contact.title">Birgalikda yangi <br><span class="gradient-text">loyihalarni yaratamiz</span></h2>
+                <p data-i18n="contact.subtitle">Biznesingiz uchun eng yaxshi va zamonaviy IT yechimni qidiryapsizmi? Biz bilan hoziroq bog'laning!</p>
+                <div class="contact-methods">
+                    <a href="mailto:yunusabdullaev0707@gmail.com" class="c-method">
+                        <span class="c-icon">✉️</span>
+                        <span>yunusabdullaev0707@gmail.com</span>
+                    </a>
+                    <a href="tel:+998907007125" class="c-method">
+                        <span class="c-icon">📞</span>
+                        <span>+998 90 700 71 25</span>
+                    </a>
+                    <a href="https://t.me/abdullaev_yunus" target="_blank" class="c-method">
+                        <span class="c-icon">✈️</span>
+                        <span>@abdullaev_yunus</span>
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name" data-i18n="contact.name">Ismingiz</label>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phone" required placeholder=" ">
+                    <label for="phone" data-i18n="contact.phone">Telefon raqamingiz</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" required placeholder=" " rows="4"></textarea>
+                    <label for="message" data-i18n="contact.message">Xabaringiz</label>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn" data-i18n="btn.send">Yuborish</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">Jeke<span>Shaq</span></a>
+                <p data-i18n="footer.rights">© 2026 Jeke Shaq IT Kompaniyasi. <br>Barcha huquqlar himoyalangan.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Asosiy</a></li>
+                    <li><a href="#about" data-i18n="nav.about">Biz haqimizda</a></li>
+                    <li><a href="#portfolio" data-i18n="nav.portfolio">Loyihalar</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
